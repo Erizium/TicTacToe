@@ -92,7 +92,13 @@
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVD-jf-zm0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvd-sR-Jfb">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cross wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s5-5u-0FJ">
+                                <rect key="frame" x="61" y="106" width="292" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvd-sR-Jfb">
                                 <rect key="frame" x="127" y="730" width="160" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Rematch"/>
@@ -100,9 +106,15 @@
                                     <action selector="rematch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yeb-79-yak"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cross wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s5-5u-0FJ">
-                                <rect key="frame" x="61" y="106" width="292" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cross : XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwE-Ek-I8k">
+                                <rect key="frame" x="23" y="204" width="141" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nought: XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf9-Vg-KPJ">
+                                <rect key="frame" x="260" y="204" width="131" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -112,11 +124,15 @@
                         <constraints>
                             <constraint firstItem="5s5-5u-0FJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="8Ph-nz-HO5"/>
                             <constraint firstItem="5s5-5u-0FJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="Bhn-ZO-Mhw"/>
+                            <constraint firstItem="uwE-Ek-I8k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="Fzt-Op-DRU"/>
                             <constraint firstItem="bvd-sR-Jfb" firstAttribute="top" secondItem="20e-Vb-xJX" secondAttribute="bottom" constant="58" id="KR8-TM-7w0"/>
                             <constraint firstItem="20e-Vb-xJX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pq0-Ka-8xy"/>
                             <constraint firstItem="20e-Vb-xJX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TDX-Ez-xtQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jf9-Vg-KPJ" secondAttribute="trailing" constant="23" id="UNg-WX-PAS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5s5-5u-0FJ" secondAttribute="trailing" constant="61" id="eaH-jC-l1h"/>
                             <constraint firstItem="bvd-sR-Jfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="fN9-An-dsf"/>
+                            <constraint firstItem="20e-Vb-xJX" firstAttribute="top" secondItem="jf9-Vg-KPJ" secondAttribute="bottom" constant="24" id="tSC-8s-Bcx"/>
+                            <constraint firstItem="20e-Vb-xJX" firstAttribute="top" secondItem="uwE-Ek-I8k" secondAttribute="bottom" constant="24" id="tx2-bd-R92"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvd-sR-Jfb" secondAttribute="trailing" constant="127" id="uP8-Am-hqE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="20e-Vb-xJX" secondAttribute="bottom" constant="190" id="ulY-JP-rol"/>
                             <constraint firstItem="20e-Vb-xJX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="208" id="xqr-s9-Y6Q"/>
@@ -124,6 +140,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cScore" destination="uwE-Ek-I8k" id="dnl-gy-qmU"/>
+                        <outlet property="nScore" destination="jf9-Vg-KPJ" id="XPD-g7-tj3"/>
                         <outlet property="rematchButton" destination="bvd-sR-Jfb" id="MgF-lZ-Kdd"/>
                         <outlet property="winner" destination="5s5-5u-0FJ" id="wC6-Uw-5pV"/>
                     </connections>

@@ -12,11 +12,14 @@ class ViewController: UIViewController {
     var currentPlayer = 1
     var gameState = [0,0,0,0,0,0,0,0,0]
     var ongoingGame = true
+    var crossScore = 0
+    var noughtScore = 0
+    var draw = 0
     
     @IBOutlet weak var winner: UILabel!
     @IBOutlet weak var rematchButton: UIButton!
-    
-    
+    @IBOutlet weak var cScore: UILabel!
+    @IBOutlet weak var nScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
                             for: UIControl.State())
                 currentPlayer = 1
             }
+            draw += 1
         }
         
         for combination in winCombos{
@@ -57,25 +61,37 @@ class ViewController: UIViewController {
                 //checks who the winner is
                 if gameState[combination[0]] == 1 {
                     winner.text = "Cross wins!"
-                   
+                   crossScore += 1
                 } else {
                     winner.text = "Nought wins!"
-                
+                    noughtScore += 1
                 }
                 winner.isHidden = false
-                //rematchButton.isHidden = false
+                rematchButton.isHidden = false
             }
+            
+        }
+        if(draw == 9){
+            winner.isHidden = false
+            rematchButton.isHidden = false
+            //quitButton.setTitle("Quit", for: .normal)
+            winner.text = "Draw."
         }
         
     }
 
     @IBAction func rematch(_ sender: Any) {
-        
+    
+        cScore.isHidden = false
+        nScore.isHidden = false
         ongoingGame = true
         winner.isHidden = true
-        //rematchButton.isHidden = true
+        rematchButton.isHidden = true
         currentPlayer = 1
         gameState = [0,0,0,0,0,0,0,0,0]
+        
+        cScore.text = "Cross: \(crossScore)"
+        nScore.text = "Nought: \(noughtScore)"
         
         for number in 1...9 {
             //sets all the images to nil.
