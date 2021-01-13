@@ -19,74 +19,75 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="20e-Vb-xJX">
                                 <rect key="frame" x="0.0" y="252" width="414" height="420"/>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uQ-2s-yT7">
-                                <rect key="frame" x="9" y="266" width="106" height="102"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uQ-2s-yT7">
+                                <rect key="frame" x="9" y="266" width="90" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vx8-3i-sAT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a4-ov-b1T">
-                                <rect key="frame" x="274" y="266" width="106" height="102"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a4-ov-b1T">
+                                <rect key="frame" x="274" y="266" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiZ-aU-Deq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-hb-FrT">
-                                <rect key="frame" x="274" y="396" width="106" height="102"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-hb-FrT">
+                                <rect key="frame" x="274" y="396" width="86" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgF-NY-KHh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSM-Yp-nQz">
-                                <rect key="frame" x="141" y="396" width="106" height="102"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSM-Yp-nQz">
+                                <rect key="frame" x="141" y="396" width="88" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0H-nm-OXi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6L-nm-YSy">
-                                <rect key="frame" x="274" y="531" width="106" height="102"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6L-nm-YSy">
+                                <rect key="frame" x="274" y="531" width="86" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fF-5j-EVj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-7z-NqW">
-                                <rect key="frame" x="141" y="531" width="106" height="102"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-7z-NqW">
+                                <rect key="frame" x="141" y="531" width="88" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIa-wj-Pgo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-Ln-rcd">
-                                <rect key="frame" x="9" y="531" width="106" height="102"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-Ln-rcd">
+                                <rect key="frame" x="9" y="531" width="90" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAU-rN-tmT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R24-c2-JTz">
-                                <rect key="frame" x="9" y="396" width="106" height="102"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R24-c2-JTz">
+                                <rect key="frame" x="9" y="396" width="90" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVD-jf-zm0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-bm-3l8">
-                                <rect key="frame" x="141" y="266" width="106" height="102"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-bm-3l8">
+                                <rect key="frame" x="141" y="266" width="88" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cross"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyL-bf-an9"/>
                                 </connections>
@@ -109,7 +110,6 @@
     </scenes>
     <resources>
         <image name="board" width="420" height="420"/>
-        <image name="cross" width="1104" height="1342"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
