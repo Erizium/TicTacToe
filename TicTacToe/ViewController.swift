@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rematchButton: UIButton!
     @IBOutlet weak var cScore: UILabel!
     @IBOutlet weak var nScore: UILabel!
+    @IBOutlet weak var quitButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,16 +69,17 @@ class ViewController: UIViewController {
                 }
                 winner.isHidden = false
                 rematchButton.isHidden = false
+                quitButton.setTitle("Quit", for: .normal)
             }
-            
         }
+        
         if(draw == 9){
             winner.isHidden = false
             rematchButton.isHidden = false
             //quitButton.setTitle("Quit", for: .normal)
             winner.text = "Draw."
+            quitButton.setTitle("Quit", for: .normal)
         }
-        
     }
 
     @IBAction func rematch(_ sender: Any) {
@@ -93,11 +95,11 @@ class ViewController: UIViewController {
         cScore.text = "Cross: \(crossScore)"
         nScore.text = "Nought: \(noughtScore)"
         
+        
         for number in 1...9 {
             //sets all the images to nil.
             let button = view.viewWithTag(number) as! UIButton
             button.setImage(nil, for: UIControl.State())
         }
     }
-    
 }
