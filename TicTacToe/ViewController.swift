@@ -9,11 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentPlayer = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    @IBAction func playButtons(_ sender: Any) {
+        
+    
+        if currentPlayer == 1 {
+            (sender as AnyObject).setImage(UIImage(
+                                named: "cross.png"),
+                            for: UIControl.State())
+            currentPlayer = 2
+            
+        } else {
+            (sender as AnyObject).setImage(UIImage(
+                                named: "nought.jpeg"),
+                            for: UIControl.State())
+            currentPlayer = 1
+        }
+        }
 
 }
-
