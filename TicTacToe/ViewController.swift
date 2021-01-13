@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var ongoingGame = true
     
     @IBOutlet weak var winner: UILabel!
+    @IBOutlet weak var rematchButton: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -25,9 +27,9 @@ class ViewController: UIViewController {
 
     @IBAction func playButtons(_ sender: Any) {
         //Will keep the game running until all fields are occupied.
-        if gameState[(sender as AnyObject).tag] == 0 && ongoingGame == true{
+        if gameState[(sender as AnyObject).tag-1] == 0 && ongoingGame == true{
             //This places currentPlayer value in gameState
-            gameState[(sender as AnyObject).tag] = currentPlayer
+            gameState[(sender as AnyObject).tag-1] = currentPlayer
     
             if currentPlayer == 1 {
                 (sender as AnyObject).setImage(UIImage(
@@ -61,10 +63,25 @@ class ViewController: UIViewController {
                 
                 }
                 winner.isHidden = false
-                
+                //rematchButton.isHidden = false
             }
         }
         
     }
 
+    @IBAction func rematch(_ sender: Any) {
+        
+        ongoingGame = true
+        winner.isHidden = true
+        //rematchButton.isHidden = true
+        currentPlayer = 1
+        gameState = [0,0,0,0,0,0,0,0,0]
+        
+        for number in 1...9 {
+            //sets all the images to nil.
+            let button = view.viewWithTag(number) as! UIButton
+            button.setImage(nil, for: UIControl.State())
+        }
+    }
+    
 }
