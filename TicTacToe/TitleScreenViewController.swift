@@ -25,9 +25,7 @@ class TitleScreenViewController: UIViewController {
                 prevNoughtScore.text = "Nought: \(noughtScore)"
                 prevCrossScore.text = "Cross: \(crossScore)"
             }
-            
-       
-        
+  
     }
     
     @IBAction func resumeGame(_ sender: Any) {
@@ -35,7 +33,16 @@ class TitleScreenViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   
+        if segue.identifier == segueToGame {
+            let destinationVC = segue.destination as! ViewController
+            
+            let resumeCrossScore = lastCrossScore
+            destinationVC.resumeCrossScore = resumeCrossScore
+            
+            let resumeNoughtScore = lastNoughtScore
+            destinationVC.resumeNoughtScore = resumeNoughtScore
+        }
+        
         }
     }
     

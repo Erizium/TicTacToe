@@ -10,6 +10,8 @@ class ViewController: UIViewController {
     var crossScore = 0
     var noughtScore = 0
     var draw = 0
+    var resumeNoughtScore: Int?
+    var resumeCrossScore: Int?
     
     @IBOutlet weak var winner: UILabel!
     @IBOutlet weak var rematchButton: UIButton!
@@ -19,6 +21,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let nCrossScore = resumeCrossScore, let nNoughtScore = resumeNoughtScore {
+            
+            crossScore += resumeCrossScore!
+            noughtScore += resumeNoughtScore!
+            
+            cScore.text = "Cross: \(resumeCrossScore!)"
+            nScore.text = "Nought: \(resumeNoughtScore!)"
+            cScore.isHidden = false
+            nScore.isHidden = false
+            
+        }
         
     }
     
@@ -67,6 +81,7 @@ class ViewController: UIViewController {
                 cScore.text = "Cross: \(crossScore)"
                 nScore.text = "Nought: \(noughtScore)"
                 quitButton.setTitle("Quit", for: .normal)
+
             }
         }
         
