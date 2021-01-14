@@ -56,7 +56,7 @@
                                 <state key="normal" title="Button" image="cross"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-T6-55E">
-                                <rect key="frame" x="137" y="627" width="141" height="87"/>
+                                <rect key="frame" x="50" y="627" width="314" height="87"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
@@ -95,6 +95,7 @@
                         <constraints>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="MTH-Ap-SZx" secondAttribute="bottom" constant="108" id="0i1-ha-eij"/>
                             <constraint firstItem="aHl-f1-WnG" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="1cT-rv-ZaU"/>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="2vr-T6-55E" secondAttribute="trailing" constant="50" id="2mE-m8-O0p"/>
                             <constraint firstItem="MTH-Ap-SZx" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="131" id="7jn-fw-ViB"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="37" id="8lR-vH-I8X"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="112" id="AlR-8d-QW4"/>
@@ -108,10 +109,9 @@
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="TDE-Y9-KEd"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="LWI-Qa-Ixp" secondAttribute="trailing" constant="103" id="W9w-f7-LV2"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="aHl-f1-WnG" secondAttribute="trailing" constant="50" id="ZZB-FK-2u7"/>
-                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="2vr-T6-55E" secondAttribute="trailing" constant="136" id="eyC-Fh-l6e"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="MTH-Ap-SZx" secondAttribute="trailing" constant="145" id="fWS-3h-rTs"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="46" id="mGJ-Iy-3r5"/>
-                            <constraint firstItem="2vr-T6-55E" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="137" id="o2V-Ob-SdG"/>
+                            <constraint firstItem="2vr-T6-55E" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="piR-2S-wTm"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="SWE-Jp-gRp" secondAttribute="trailing" constant="36" id="rWQ-V4-QXd"/>
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="wWB-tK-rP7"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="top" secondItem="wCe-Vu-rNU" secondAttribute="top" constant="111" id="zxn-E3-ac3"/>
@@ -119,6 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dPH-lQ-Jla"/>
                     <connections>
+                        <outlet property="playButton" destination="2vr-T6-55E" id="8T8-aq-XMl"/>
                         <outlet property="prevCrossScore" destination="fX3-Pr-dhl" id="aSq-9U-XCS"/>
                         <outlet property="prevNoughtScore" destination="aHl-f1-WnG" id="3YI-0S-YiN"/>
                         <outlet property="previousScore" destination="LWI-Qa-Ixp" id="UMa-0J-cac"/>

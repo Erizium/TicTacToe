@@ -7,6 +7,7 @@ class TitleScreenViewController: UIViewController {
     @IBOutlet weak var prevNoughtScore: UILabel!
     @IBOutlet weak var previousScore: UILabel!
     @IBOutlet weak var resumeGameButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     
     let segueToGame = "segueToGame"
     var lastCrossScore : Int?
@@ -15,17 +16,16 @@ class TitleScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-            
             if let crossScore = lastCrossScore, let noughtScore = lastNoughtScore {
                 resumeGameButton.isHidden = false
                 previousScore.isHidden = false
                 prevCrossScore.isHidden = false
                 prevNoughtScore.isHidden = false
                 
+                playButton.setTitle("New game", for: .normal)
                 prevNoughtScore.text = "Nought: \(noughtScore)"
                 prevCrossScore.text = "Cross: \(crossScore)"
             }
-  
     }
     
     @IBAction func resumeGame(_ sender: Any) {
@@ -42,9 +42,8 @@ class TitleScreenViewController: UIViewController {
             let resumeNoughtScore = lastNoughtScore
             destinationVC.resumeNoughtScore = resumeNoughtScore
         }
-        
-        }
     }
+}
     
     
     
