@@ -60,33 +60,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="JPf-It-iS8"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="znk-QA-NU8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-Qa-Ixp">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-Qa-Ixp">
                                 <rect key="frame" x="103" y="484" width="208" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cross: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX3-Pr-dhl">
-                                <rect key="frame" x="50" y="546" width="113" height="35"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cross: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX3-Pr-dhl">
+                                <rect key="frame" x="50" y="546" width="73.5" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nought: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-f1-WnG">
-                                <rect key="frame" x="250" y="546" width="114" height="35"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nought: X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-f1-WnG">
+                                <rect key="frame" x="275.5" y="546" width="88.5" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-Ap-SZx">
+                                <rect key="frame" x="145" y="712" width="124" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Resume"/>
+                                <connections>
+                                    <action selector="resumeGame:" destination="tIL-Os-VWb" eventType="touchUpInside" id="kp6-Bs-BPK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wCe-Vu-rNU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="MTH-Ap-SZx" secondAttribute="bottom" constant="108" id="0i1-ha-eij"/>
                             <constraint firstItem="aHl-f1-WnG" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="1cT-rv-ZaU"/>
-                            <constraint firstItem="aHl-f1-WnG" firstAttribute="leading" secondItem="fX3-Pr-dhl" secondAttribute="trailing" constant="87" id="7eu-hf-8Qa"/>
+                            <constraint firstItem="MTH-Ap-SZx" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="131" id="7jn-fw-ViB"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="37" id="8lR-vH-I8X"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="112" id="AlR-8d-QW4"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="2vr-T6-55E" secondAttribute="bottom" constant="148" id="Ay7-WT-W3t"/>
@@ -95,14 +104,15 @@
                             <constraint firstItem="LWI-Qa-Ixp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="103" id="OMJ-qt-cin"/>
                             <constraint firstItem="LWI-Qa-Ixp" firstAttribute="top" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="53" id="RHq-hx-2Xj"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="aHl-f1-WnG" secondAttribute="bottom" constant="46" id="RTm-uy-2mf"/>
+                            <constraint firstItem="MTH-Ap-SZx" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="145" id="SCM-cN-zsO"/>
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="TDE-Y9-KEd"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="LWI-Qa-Ixp" secondAttribute="trailing" constant="103" id="W9w-f7-LV2"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="aHl-f1-WnG" secondAttribute="trailing" constant="50" id="ZZB-FK-2u7"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="2vr-T6-55E" secondAttribute="trailing" constant="136" id="eyC-Fh-l6e"/>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="MTH-Ap-SZx" secondAttribute="trailing" constant="145" id="fWS-3h-rTs"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="46" id="mGJ-Iy-3r5"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="137" id="o2V-Ob-SdG"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="SWE-Jp-gRp" secondAttribute="trailing" constant="36" id="rWQ-V4-QXd"/>
-                            <constraint firstItem="aHl-f1-WnG" firstAttribute="leading" secondItem="fX3-Pr-dhl" secondAttribute="trailing" constant="87" id="sN1-2v-5wS"/>
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="wWB-tK-rP7"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="top" secondItem="wCe-Vu-rNU" secondAttribute="top" constant="111" id="zxn-E3-ac3"/>
                         </constraints>
@@ -111,11 +121,14 @@
                     <connections>
                         <outlet property="prevCrossScore" destination="fX3-Pr-dhl" id="aSq-9U-XCS"/>
                         <outlet property="prevNoughtScore" destination="aHl-f1-WnG" id="3YI-0S-YiN"/>
+                        <outlet property="previousScore" destination="LWI-Qa-Ixp" id="UMa-0J-cac"/>
+                        <outlet property="resumeGameButton" destination="MTH-Ap-SZx" id="ATw-Op-Ec5"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToGame" modalPresentationStyle="fullScreen" id="JNo-dV-fqd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WME-Ge-CVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1091.304347826087" y="60.9375"/>
+            <point key="canvasLocation" x="-1091.304347826087" y="75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -271,9 +284,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110.14492753623189" y="75"/>
+            <point key="canvasLocation" x="-259" y="75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JNo-dV-fqd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="board" width="420" height="420"/>
         <image name="cross" width="1104" height="1342"/>

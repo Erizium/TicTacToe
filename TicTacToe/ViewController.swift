@@ -108,11 +108,11 @@ class ViewController: UIViewController {
         if segue.identifier == segueToTitle {
             let destinationVC = segue.destination as! TitleScreenViewController
             
-            let oldCrossScore = String(crossScore)
-            destinationVC.lastCrossScore = "Cross: \(oldCrossScore)"
+            let oldCrossScore = crossScore
+            destinationVC.lastCrossScore = oldCrossScore
             
-            let oldNoughtScore = String(noughtScore)
-            destinationVC.lastNoughtScore = "Nought: \(oldNoughtScore)"
+            let oldNoughtScore = noughtScore
+            destinationVC.lastNoughtScore = oldNoughtScore
         }
     }
     
