@@ -1,14 +1,9 @@
-//
-//  ViewController.swift
-//  TicTacToe
-//
-//  Created by Tobias Österlin on 2021-01-12.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    let segueToTitle = "segueToTitle"
     var currentPlayer = 1
     var gameState = [0,0,0,0,0,0,0,0,0]
     var ongoingGame = true
@@ -69,6 +64,8 @@ class ViewController: UIViewController {
                 }
                 winner.isHidden = false
                 rematchButton.isHidden = false
+                cScore.text = "Cross: \(crossScore)"
+                nScore.text = "Nought: \(noughtScore)"
                 quitButton.setTitle("Quit", for: .normal)
             }
         }
@@ -84,6 +81,7 @@ class ViewController: UIViewController {
 
     @IBAction func rematch(_ sender: Any) {
     
+        draw = 0
         cScore.isHidden = false
         nScore.isHidden = false
         ongoingGame = true
@@ -91,9 +89,7 @@ class ViewController: UIViewController {
         rematchButton.isHidden = true
         currentPlayer = 1
         gameState = [0,0,0,0,0,0,0,0,0]
-        
-        cScore.text = "Cross: \(crossScore)"
-        nScore.text = "Nought: \(noughtScore)"
+
         
         
         for number in 1...9 {
@@ -102,4 +98,22 @@ class ViewController: UIViewController {
             button.setImage(nil, for: UIControl.State())
         }
     }
+    
+    @IBAction func quitToTitle(_ sender: Any) {
+        performSegue(withIdentifier: segueToTitle, sender: self)
+    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueToTitle {
+            let destinationVC = segue.destination as! TitleScreenViewController
+            
+            let oldCrossScore = String(crossScore)
+            destinationVC.lastCrossScore = "Cross: \(oldCrossScore)"
+            
+            let oldNoughtScore = String(noughtScore)
+            destinationVC.lastNoughtScore = "Nought: \(oldNoughtScore)"
+        }
+    }
+    
 }

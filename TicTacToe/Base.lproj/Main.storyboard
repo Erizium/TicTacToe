@@ -11,7 +11,7 @@
         <!--secondViewController-->
         <scene sceneID="HZF-5p-fqw">
             <objects>
-                <viewController title="secondViewController" id="tIL-Os-VWb" sceneMemberID="viewController">
+                <viewController title="secondViewController" id="tIL-Os-VWb" customClass="TitleScreenViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZJ-Oy-d5x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,25 +63,59 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="JPf-It-iS8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-Qa-Ixp">
+                                <rect key="frame" x="103" y="484" width="208" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cross: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX3-Pr-dhl">
+                                <rect key="frame" x="50" y="546" width="113" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nought: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-f1-WnG">
+                                <rect key="frame" x="250" y="546" width="114" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wCe-Vu-rNU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aHl-f1-WnG" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="1cT-rv-ZaU"/>
+                            <constraint firstItem="aHl-f1-WnG" firstAttribute="leading" secondItem="fX3-Pr-dhl" secondAttribute="trailing" constant="87" id="7eu-hf-8Qa"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="37" id="8lR-vH-I8X"/>
+                            <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="112" id="AlR-8d-QW4"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="2vr-T6-55E" secondAttribute="bottom" constant="148" id="Ay7-WT-W3t"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="431" id="Gcp-AR-MsX"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="196" id="I8H-9J-W6N"/>
+                            <constraint firstItem="LWI-Qa-Ixp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="103" id="OMJ-qt-cin"/>
+                            <constraint firstItem="LWI-Qa-Ixp" firstAttribute="top" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="53" id="RHq-hx-2Xj"/>
+                            <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="aHl-f1-WnG" secondAttribute="bottom" constant="46" id="RTm-uy-2mf"/>
+                            <constraint firstItem="fX3-Pr-dhl" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="TDE-Y9-KEd"/>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="LWI-Qa-Ixp" secondAttribute="trailing" constant="103" id="W9w-f7-LV2"/>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="aHl-f1-WnG" secondAttribute="trailing" constant="50" id="ZZB-FK-2u7"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="2vr-T6-55E" secondAttribute="trailing" constant="136" id="eyC-Fh-l6e"/>
+                            <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="46" id="mGJ-Iy-3r5"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="137" id="o2V-Ob-SdG"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="SWE-Jp-gRp" secondAttribute="trailing" constant="36" id="rWQ-V4-QXd"/>
+                            <constraint firstItem="aHl-f1-WnG" firstAttribute="leading" secondItem="fX3-Pr-dhl" secondAttribute="trailing" constant="87" id="sN1-2v-5wS"/>
+                            <constraint firstItem="fX3-Pr-dhl" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="wWB-tK-rP7"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="top" secondItem="wCe-Vu-rNU" secondAttribute="top" constant="111" id="zxn-E3-ac3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dPH-lQ-Jla"/>
+                    <connections>
+                        <outlet property="prevCrossScore" destination="fX3-Pr-dhl" id="aSq-9U-XCS"/>
+                        <outlet property="prevNoughtScore" destination="aHl-f1-WnG" id="3YI-0S-YiN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WME-Ge-CVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871.01449275362324" y="75"/>
+            <point key="canvasLocation" x="-1091.304347826087" y="60.9375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -198,7 +232,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Give up"/>
                                 <connections>
-                                    <segue destination="tIL-Os-VWb" kind="presentation" modalPresentationStyle="fullScreen" id="iB4-gh-4ng"/>
+                                    <action selector="quitToTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIz-pf-dUe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -232,6 +266,7 @@
                         <outlet property="quitButton" destination="0tX-oL-Nxw" id="6db-O9-jv8"/>
                         <outlet property="rematchButton" destination="bvd-sR-Jfb" id="MgF-lZ-Kdd"/>
                         <outlet property="winner" destination="5s5-5u-0FJ" id="wC6-Uw-5pV"/>
+                        <segue destination="tIL-Os-VWb" kind="presentation" identifier="segueToTitle" modalPresentationStyle="fullScreen" id="ihp-JC-W46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

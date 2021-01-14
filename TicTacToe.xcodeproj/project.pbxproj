@@ -15,6 +15,7 @@
 		F685A7EB25ADB22B000353D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F685A7E925ADB22B000353D5 /* LaunchScreen.storyboard */; };
 		F685A7F625ADB22B000353D5 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685A7F525ADB22B000353D5 /* TicTacToeTests.swift */; };
 		F685A80125ADB22B000353D5 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685A80025ADB22B000353D5 /* TicTacToeUITests.swift */; };
+		F685A81225B06F58000353D5 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685A81125B06F58000353D5 /* TitleScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F685A7FC25ADB22B000353D5 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F685A80025ADB22B000353D5 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		F685A80225ADB22B000353D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F685A81125B06F58000353D5 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F685A7E025ADB227000353D5 /* SceneDelegate.swift */,
 				F685A7E225ADB227000353D5 /* ViewController.swift */,
 				F685A7E425ADB227000353D5 /* Main.storyboard */,
+				F685A81125B06F58000353D5 /* TitleScreenViewController.swift */,
 				F685A7E725ADB22B000353D5 /* Assets.xcassets */,
 				F685A7E925ADB22B000353D5 /* LaunchScreen.storyboard */,
 				F685A7EC25ADB22B000353D5 /* Info.plist */,
@@ -261,6 +264,7 @@
 				F685A7E325ADB227000353D5 /* ViewController.swift in Sources */,
 				F685A7DF25ADB227000353D5 /* AppDelegate.swift in Sources */,
 				F685A7E125ADB227000353D5 /* SceneDelegate.swift in Sources */,
+				F685A81225B06F58000353D5 /* TitleScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
