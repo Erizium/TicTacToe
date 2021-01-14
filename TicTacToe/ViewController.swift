@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let nCrossScore = resumeCrossScore, let nNoughtScore = resumeNoughtScore {
+        if let _ = resumeCrossScore, let _ = resumeNoughtScore {
             
             crossScore += resumeCrossScore!
             noughtScore += resumeNoughtScore!
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
             nScore.isHidden = false
             
         }
-        
     }
     
     let winCombos = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
@@ -105,8 +104,6 @@ class ViewController: UIViewController {
         currentPlayer = 1
         gameState = [0,0,0,0,0,0,0,0,0]
 
-        
-        
         for number in 1...9 {
             //sets all the images to nil.
             let button = view.viewWithTag(number) as! UIButton
@@ -130,5 +127,4 @@ class ViewController: UIViewController {
             destinationVC.lastNoughtScore = oldNoughtScore
         }
     }
-    
 }
