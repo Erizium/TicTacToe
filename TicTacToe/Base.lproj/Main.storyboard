@@ -13,11 +13,11 @@
             <objects>
                 <viewController title="secondViewController" id="tIL-Os-VWb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZJ-Oy-d5x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SWE-Jp-gRp">
-                                <rect key="frame" x="37" y="111" width="341" height="266"/>
+                                <rect key="frame" x="37" y="155" width="341" height="276"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5r3-Bu-OrL">
                                 <rect key="frame" x="87" y="241" width="66" height="50"/>
@@ -56,7 +56,7 @@
                                 <state key="normal" title="Button" image="cross"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-T6-55E">
-                                <rect key="frame" x="137" y="573" width="141" height="87"/>
+                                <rect key="frame" x="137" y="627" width="141" height="87"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
@@ -198,7 +198,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Give up"/>
                                 <connections>
-                                    <segue destination="tIL-Os-VWb" kind="show" id="iB4-gh-4ng"/>
+                                    <segue destination="tIL-Os-VWb" kind="presentation" modalPresentationStyle="fullScreen" id="iB4-gh-4ng"/>
                                 </connections>
                             </button>
                         </subviews>
