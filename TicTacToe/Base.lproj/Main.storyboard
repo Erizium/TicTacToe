@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-Ap-SZx">
-                                <rect key="frame" x="145" y="712" width="124" height="42"/>
+                                <rect key="frame" x="100" y="712" width="214" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Resume"/>
                                 <connections>
@@ -100,20 +100,20 @@
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="37" id="8lR-vH-I8X"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="112" id="AlR-8d-QW4"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="2vr-T6-55E" secondAttribute="bottom" constant="148" id="Ay7-WT-W3t"/>
+                            <constraint firstItem="MTH-Ap-SZx" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="100" id="G2j-bL-aa6"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="bottom" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="431" id="Gcp-AR-MsX"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="196" id="I8H-9J-W6N"/>
                             <constraint firstItem="LWI-Qa-Ixp" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="103" id="OMJ-qt-cin"/>
                             <constraint firstItem="LWI-Qa-Ixp" firstAttribute="top" secondItem="SWE-Jp-gRp" secondAttribute="bottom" constant="53" id="RHq-hx-2Xj"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="aHl-f1-WnG" secondAttribute="bottom" constant="46" id="RTm-uy-2mf"/>
-                            <constraint firstItem="MTH-Ap-SZx" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="145" id="SCM-cN-zsO"/>
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="TDE-Y9-KEd"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="LWI-Qa-Ixp" secondAttribute="trailing" constant="103" id="W9w-f7-LV2"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="aHl-f1-WnG" secondAttribute="trailing" constant="50" id="ZZB-FK-2u7"/>
-                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="MTH-Ap-SZx" secondAttribute="trailing" constant="145" id="fWS-3h-rTs"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="top" secondItem="fX3-Pr-dhl" secondAttribute="bottom" constant="46" id="mGJ-Iy-3r5"/>
                             <constraint firstItem="2vr-T6-55E" firstAttribute="leading" secondItem="wCe-Vu-rNU" secondAttribute="leading" constant="50" id="piR-2S-wTm"/>
                             <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="SWE-Jp-gRp" secondAttribute="trailing" constant="36" id="rWQ-V4-QXd"/>
                             <constraint firstItem="fX3-Pr-dhl" firstAttribute="top" secondItem="LWI-Qa-Ixp" secondAttribute="bottom" constant="31" id="wWB-tK-rP7"/>
+                            <constraint firstItem="wCe-Vu-rNU" firstAttribute="trailing" secondItem="MTH-Ap-SZx" secondAttribute="trailing" constant="100" id="zbR-va-8nN"/>
                             <constraint firstItem="SWE-Jp-gRp" firstAttribute="top" secondItem="wCe-Vu-rNU" secondAttribute="top" constant="111" id="zxn-E3-ac3"/>
                         </constraints>
                     </view>

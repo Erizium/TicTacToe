@@ -10,8 +10,8 @@ class ViewController: UIViewController {
     var crossScore = 0
     var noughtScore = 0
     var draw = 0
-    var resumeNoughtScore: Int?
-    var resumeCrossScore: Int?
+    var resumeNoughtScore: Int? //previous saved game score
+    var resumeCrossScore: Int? //
     
     @IBOutlet weak var winner: UILabel!
     @IBOutlet weak var rematchButton: UIButton!

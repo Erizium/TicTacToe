@@ -10,8 +10,8 @@ class TitleScreenViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     
     let segueToGame = "segueToGame"
-    var lastCrossScore : Int?
-    var lastNoughtScore : Int?
+    var lastCrossScore : Int? //saves last games score
+    var lastNoughtScore : Int? //
     
     override func viewDidLoad() {
         super.viewDidLoad()
